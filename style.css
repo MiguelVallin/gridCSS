@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid #3498db;
+  border-radius: 8px;
+  background-color: #ecf0f1;
+  grid-template-columns: 10fr;
+  grid-template-areas:
+    "text-section"
+    "radio-checkbox-section"
+    "button";
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #3498db;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #3498db;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.text-section {
+  grid-area: text-section;
+}
+
+.radio-checkbox-section {
+  grid-area: radio-checkbox-section;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.button {
+  grid-area: button;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
